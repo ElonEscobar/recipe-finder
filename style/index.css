@@ -23,9 +23,9 @@ body{
     align-items: center;
 }
 .theme-label{
-    background-color: rgb(114, 91, 91);
+    background-color: rgb(180, 160, 142);
     height: 30px;
-    width: 50px;
+    width: 58px;
     display: flex;
     border-radius: 40px;
     align-items: center;
@@ -45,8 +45,8 @@ body{
     color:  #fff;
 }
 .theme-ball{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: aqua;
     position: absolute;
     border-radius: 50%;
@@ -84,7 +84,7 @@ body.darkTheme{
     word-spacing: 1rem;
 }
 span{
-    color: #b54507;
+    color: #d65108;
 }
 
 /*---*/
@@ -140,7 +140,7 @@ span{
 }
 
 
-/**/
+/*js elements*/
 .meal-result{
     margin-top: 4rem;
 }
@@ -174,14 +174,15 @@ span{
     width: 175px;
     margin: 1rem auto;
     border-radius: 2rem;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
 
 }
 .recipe-btn:hover{
-    background: #b54507;
+    background: #fd5a02;
+    border: 2px solid black;
 }
 
-/* meal details */
+/* meal result details */
 .meal-details{
     display: none;
     position: fixed;
@@ -197,9 +198,7 @@ span{
     padding: 2rem 0;
 }
 
-
-/* js elements */
-.showRecipe{
+.revealRecipe{
     display: block;
 }
 

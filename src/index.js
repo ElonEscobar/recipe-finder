@@ -5,7 +5,14 @@ const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 //event listeners
-
+recipeCloseBtn.addEventListener("click",closeRecipe)
+function closeRecipe(){
+    const targets = document.querySelector(".meal-details")
+    targets.classList.add('closeRecipe')
+    // e.target.parentElement.parentElement
+    console.log(targets)
+    // targets.remove()
+}
 //trigger dark-theme
 myCheckbox.addEventListener("click",()=>{
     document.body.classList.toggle("darkTheme")
@@ -78,5 +85,5 @@ function recipeModal(meal){
 
     `;
     mealDetailsContent.innerHTML = html;
-    mealDetailsContent.parentElement.classList.add('showRecipe');
+    mealDetailsContent.parentElement.classList.add('revealRecipe');
 }
