@@ -208,3 +208,11 @@ body{
     margin: 0 auto;
     display: block;
 }
+/*  */
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: #d65108;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
