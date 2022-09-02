@@ -8,6 +8,7 @@ const recipeCloseBtn = document.getElementById("recipe-close-btn");
 searchBtn.addEventListener("click",getMeal)
 function getMeal(){
     let searchInput = document.getElementById("search-input").value.trim()
+    console.log(searchInput)
     const apiUrl = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInput}`
     async function getFood(){
         const responce = await fetch(apiUrl)
