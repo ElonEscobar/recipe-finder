@@ -16,6 +16,54 @@ body{
 
 
 /*  */
+
+.theme-object{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.theme-label{
+    background-color: rgb(114, 91, 91);
+    height: 30px;
+    width: 50px;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+.theme{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+.fa-moon{
+    color: black;
+}
+.fa-sun{
+    color:  #fff;
+}
+.theme-ball{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+.theme-checkbox{
+    position: absolute;
+    opacity: 0;
+}
+.theme-checkbox:checked + .theme-label .theme-ball{
+    transform: translateX(24px);
+}
+body.darkTheme{
+    background: #292C35;
+    color: #fff;
+}
+
 .btn{
     font-family: inherit;
     cursor: pointer;
