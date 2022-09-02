@@ -4,7 +4,14 @@ const mealList = document.getElementById("meal")
 const mealDetailsContent = document.querySelector(".meal-details-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
-//add event listeners
+//event listeners
+
+//trigger dark-theme
+myCheckbox.addEventListener("click",()=>{
+    document.body.classList.toggle("darkTheme")
+
+})
+
 searchBtn.addEventListener("click",getMeal)
 function getMeal(){
     let searchInput = document.getElementById("search-input").value.trim()
