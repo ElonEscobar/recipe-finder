@@ -11,7 +11,7 @@ body{
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
-    font-family:  sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -33,6 +33,10 @@ body{
     font-size: 4rem;
     font-family: "Aladin";
     letter-spacing: 1px;
+    word-spacing: 1rem;
+}
+span{
+    color: #b54507;
 }
 
 /*---*/
@@ -173,6 +177,8 @@ body{
     opacity: 0.9;
 }
 .recipe-title{
+    font-size: 2rem;
+    font-family: "Aladin";
     letter-spacing: 1px;
     padding-bottom: 1rem;
 }
@@ -196,12 +202,13 @@ body{
 
 }
 .recipe-instruct{
+    font-family: "Poppins";
     padding: 1rem 0;
     color: #000;
-    text-decoration: dashed;
 }
 .instructions{
     color: #fff;
+    
 }
 .recipe-meal-img img{
     width: 100px;

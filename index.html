@@ -11,8 +11,20 @@
 <body>
   <div class = "container">
     <div class = "meal-wrapper" id="meal-wrap">
+      <!--theme-->
+      <div class="theme-object">
+        <div class="theme">theme</div>
+        <input type="checkbox" class="theme-checkbox" id="theme-checkbox">
+        <label for="theme-checkbox" class="theme-label">
+          <i class="fa fa-sun"></i>
+          <i class="fa fa-moon"></i>
+          
+          <div class="theme-ball"></div>
+        </label>
+      </div>
+
       <div class = "meal-search">
-        <h1 class="top-title">Mordern Kitchen</h1>
+        <h1 class="top-title">M<span>order</span>n K<span>it</span>chen</h1>
         <h2 class = "title">Find Meals As Per Your Ingredients</h2>
         <blockquote>Two key ingredients in any successful chef —a quick learner and someone with a sharp brain.<br>
           <cite>- Gordon Ramsay</cite>
@@ -42,7 +54,7 @@
           <!-- end of meal item -->
         </div>
       </div>
-
+    
       <!--meal results pop-up-->
       <div class = "meal-details">
         <!-- recipe close btn -->
@@ -50,11 +62,11 @@
           <i class = "fas fa-times"></i>
         </button>
 
-        <!-- meal content -->
+        <!--pop-up-->
         <div class = "meal-details-content">
           <h2 class = "recipe-title">Meals Name Here</h2>
           <p class = "recipe-category">Category Name</p>
-          <div class = "recipe-instruct">
+          <div class = "recipe-instructions">
             <h3 class="recipe-instruct">Procedure:</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
