@@ -40,3 +40,36 @@ function getMeal(){
     }
     getFood()
 }
+
+//
+mealList.addEventListener("click", findMealRecipe)
+function findMealRecipe(e){
+    e.preventDefault()
+    console.log(e.target)
+    if(e.target.classList.contains("recipe-btn")){
+        let mealElement = e.target.parentElement.parentElement
+        console.log(mealElement)
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealElement.dataset.id}`)
+        .then(responce => responce.json())
+        .then(data => recipeModal(data.meals))
+    }
+}
+
+function recipeModal(meal){
+    console.log(meal)
+    meal = meal[0]
+    let html = `
+        <h2 class = "recipe-title">${meal.strMeal}</h2>
+        <p class = "recipe-category">${meal.strCategory}</p>
+        <div class = "recipe-instruct">
+            <h3 class = "recipe-instruct">Procedure:</h3>
+            <p class = "instructions">${meal.strInstructions}</p>
+        </div>
+        <div class = "recipe-meal-img">
+            <img src = "${meal.strMealThumb}" alt = "">
+        </div>
+
+    `;
+    mealDetailsContent.innerHTML = html;
+    mealDetailsContent.parentElement.classList.add('showRecipe');
+}
