@@ -39,7 +39,7 @@ function getMeal(){
             mealList.classList.remove("notFound")
         }
         else{
-            html = "Sorry We don\'t have that at the moment";
+            html = "Sorry We don\'t have that at this moment";
             mealList.classList.add("notFound")
         }
         mealList.innerHTML = html;
